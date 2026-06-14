@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#E1306C" />
+    <meta name="description" content="Sky - Le réseau social des vidéos courtes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Sky" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sky - Vidéos courtes" />
+    <meta property="og:description" content="Découvrez le meilleur des vidéos courtes" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo.png" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Sky</title>
+
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #fff; }
+      #root { min-height: 100vh; }
+      
+      /* Prevent bounce scroll on iOS */
+      html, body {
+        overscroll-behavior: none;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>JavaScript est requis pour utiliser Sky.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

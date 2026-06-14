@@ -1,0 +1,27 @@
+{
+  "short_name": "Sky",
+  "name": "Sky - Vidéos courtes",
+  "description": "Le réseau social des vidéos courtes ultra belles",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#E1306C",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "categories": ["social", "entertainment"],
+  "lang": "fr",
+  "scope": "/"
+}

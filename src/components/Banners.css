@@ -1,0 +1,120 @@
+.guest-banner-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+}
+
+.guest-banner {
+  background: var(--bg);
+  border-radius: 24px 24px 0 0;
+  padding: 28px 24px;
+  padding-bottom: calc(env(safe-area-inset-bottom, 0) + 28px);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  text-align: center;
+}
+
+.guest-banner-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--text-secondary);
+  padding: 6px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.guest-banner-close:active { background: var(--bg-tertiary); }
+
+.guest-banner-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 4px;
+  animation: logoFloat 4s ease-in-out infinite;
+}
+
+.guest-banner-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.guest-banner h3 {
+  font-size: 22px;
+  font-weight: 800;
+  background: var(--sky-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.guest-banner p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.guest-banner-cta {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: var(--radius-lg);
+  margin-top: 4px;
+}
+
+.guest-banner-login {
+  font-size: 14px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.guest-banner-login strong { color: var(--ig-pink); }
+
+/* Offline banner */
+.offline-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #fff3cd;
+  color: #856404;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 1px solid #ffeeba;
+}
+
+.offline-icon {
+  display: flex;
+  align-items: center;
+  color: #856404;
+}
+
+.offline-banner button {
+  background: #856404;
+  color: white;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: var(--transition);
+}
+
+.offline-banner button:active { opacity: 0.8; transform: scale(0.96); }

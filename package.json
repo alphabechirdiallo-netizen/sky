@@ -1,0 +1,40 @@
+{
+  "name": "sky-social",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0",
+    "react-scripts": "5.0.1",
+    "react-intersection-observer": "^9.5.3",
+    "react-dropzone": "^14.2.3",
+    "react-player": "^2.14.1",
+    "framer-motion": "^10.16.16",
+    "date-fns": "^3.2.0",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": ["react-app"]
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  },
+  "pwa": {
+    "name": "Sky",
+    "short_name": "Sky",
+    "theme_color": "#E1306C",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+  }
+}
