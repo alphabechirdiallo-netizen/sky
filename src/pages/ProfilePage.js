@@ -93,7 +93,7 @@ const ProfilePage = ({ isOwn }) => {
 
   const saveEdit = async () => {
     setSaving(true);
-    const { data, error } = await updateProfile(editForm);
+    const { error } = await updateProfile(editForm);
     if (!error) {
       setProfile(p => ({ ...p, ...editForm }));
       setEditing(false);

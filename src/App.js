@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import SplashScreen from './components/SplashScreen';
@@ -31,7 +31,6 @@ const AppRoutes = () => {
 };
 
 const AppLayout = () => {
-  const { loading } = useAuth();
   const [splashDone, setSplashDone] = useState(false);
 
   if (!splashDone) {

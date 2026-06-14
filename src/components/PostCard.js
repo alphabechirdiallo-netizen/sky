@@ -17,8 +17,7 @@ const PostCard = forwardRef(({ post, onInteraction, onUpdate, onOpenReel }, ref)
   const [showShare, setShowShare] = useState(false);
   const [showComments, setShowComments] = useState(false);
   const [likeAnim, setLikeAnim] = useState(false);
-  const [imgIndex, setImgIndex] = useState(0);
-  const touchStart = useRef(null);
+  const touchStart = useRef(null); // eslint-disable-line no-unused-vars
   const doubleTapRef = useRef(null);
 
   const profile = post.profiles;
@@ -67,7 +66,7 @@ const PostCard = forwardRef(({ post, onInteraction, onUpdate, onOpenReel }, ref)
     }
   };
 
-  const handleFollow = async () => {
+  const handleFollow = async () => { // eslint-disable-line no-unused-vars
     if (!onInteraction('follow')) return;
     await supabase.from('follows').insert({ follower_id: user.id, following_id: profile.id });
   };

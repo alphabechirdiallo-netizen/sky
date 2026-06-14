@@ -16,6 +16,7 @@ const ActivityPage = () => {
     if (!user) return;
     fetchNotifications();
     markAllRead();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   const fetchNotifications = async () => {

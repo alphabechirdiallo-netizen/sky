@@ -17,6 +17,7 @@ const StoryViewer = ({ storyGroup, onClose }) => {
   useEffect(() => {
     startProgress();
     return () => clearInterval(timerRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [current]);
 
   const startProgress = () => {

@@ -153,7 +153,6 @@ function computeEngagementScore(post) {
   const shares = post.shares_count || 0;
   const saves = post.saves_count || 0;
 
-  const likeRate = likes / views;
   const commentRate = comments / views;
   const shareRate = shares / views;
   const saveRate = saves / views;

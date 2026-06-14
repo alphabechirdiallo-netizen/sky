@@ -29,7 +29,6 @@ const HomePage = () => {
     refresh,
     updatePost: algoUpdatePost,
     trackInteraction,
-    trackView,
   } = useRecommendedFeed({
     user,
     profile,
