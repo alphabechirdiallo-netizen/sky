@@ -6,7 +6,7 @@ import StoryViewer from './StoryViewer';
 import './StoriesBar.css';
 
 const StoriesBar = () => {
-  const { user, profile } = useAuth();
+  const { profile } = useAuth();
   const navigate = useNavigate();
   const [stories, setStories] = useState([]);
   const [activeStory, setActiveStory] = useState(null);

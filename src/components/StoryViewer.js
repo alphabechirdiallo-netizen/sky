@@ -6,7 +6,6 @@ const StoryViewer = ({ storyGroup, onClose }) => {
   const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
   const [progress, setProgress] = useState(0);
-  const [paused, setPaused] = useState(false);
   const timerRef = useRef();
   const startRef = useRef();
   const duration = 5000;

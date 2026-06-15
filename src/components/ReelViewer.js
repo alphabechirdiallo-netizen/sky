@@ -24,6 +24,7 @@ const ReelViewer = ({ post, onClose }) => {
     // Track view
     supabase.from('post_views').insert({ user_id: user?.id, post_id: post.id });
     supabase.from('posts').update({ views_count: (post.views_count || 0) + 1 }).eq('id', post.id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const togglePlay = () => {
